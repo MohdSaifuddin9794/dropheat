@@ -1,0 +1,103 @@
+
+.header{
+padding: 10px 20px;
+    border-bottom: 1.5px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leftside-header{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+.navigations{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.nav-item .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nav-item .nav-link span{
+    color: var(--links-color);
+    font-weight: 600;
+    font-size: 15px;
+    /* padding-bottom: 5px; */
+}
+.dropdown .dropdown-toggle::after{
+display: none;
+}
+
+.rightmenu{
+    gap: 10px;
+}
+
+.sidebar ul li .nav-link-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    background-color: var(--btn-primary);
+    border-radius: 8px;
+
+}
+
+
+.sidebar ul li .nav-link-box.active-box{
+    background: var(--actve-nav);
+border-width: 1px;
+    border-style: solid;
+    border-color: #806bff;
+    overflow: hidden;
+    position: relative;
+}
+.sidebar ul li .nav-link-box.active-box::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 0px;
+    border-radius: 100px;
+    background-color: #735CFF;
+    z-index: 1;
+    filter: blur(26px);
+}
+.sidebar ul li .nav-link-box svg{
+    fill:var(--svg) !important;
+}
+.sidebar ul li .nav-link-box.active-box svg{
+    color:var(--active-svg) !important;
+    fill: var(--active-svg) !important;
+    position: relative;
+        z-index: 2;
+}
+.sidebar .sidebar-navigations{
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.sidebar .sidebar-navigations .social-media{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 66px;
+        padding: 30px 12px;
+        background-color: var(--btn-primary);
+        border-radius: 8px;
+        gap: 16px;
+}
+.sidebar .sidebar-navigations .social-media a{
+    width: auto;
+    height: auto;
+}

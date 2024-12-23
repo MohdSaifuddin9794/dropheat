@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Grotesk:wght@300..700&display=swap');
+:root {
+--header-bg : #1A1A20;
+--border-color:#363640;
+--links-color: #A3A3B7;
+--btn-primary: #16161B;
+--white:#ffffff;
+--body-bg: #1E1E1E;
+--perple-gradient: linear-gradient(to bottom, #7848FF, #6254FF);
+--active-nav: linear-gradient(to bottom, #705CE4 , #3E337E00);
+--active-svg: #B2B2FF;
+--svg: #676778;
+--chat-input: #29292F;
+--neon-green: #39FF88;
+--green-txt: #003114;
+--msg-box: #222228;
+}
+*,
+::after,
+::before{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+h1, h2{
+  font-family: "Space Grotesk", serif;
+  font-weight: 700;
+}
+h3,h4{
+    font-family: "Space Grotesk", serif;
+  font-weight: 600;
+}
+h5,h6{
+      font-family: "Space Grotesk", serif;
+        font-weight: 500;
+}
+p, span, a, li{
+  font-family: "Space Grotesk", serif;
+    font-weight: 400;
+}
+small{
+    font-family: "Space Grotesk", serif;
+      font-weight: 300;
+}
+body{
+  background-color: var(--header-bg);
+}
+
+button{
+    font-family: "Space Grotesk", serif;
+    font-weight: 600;
+}
+button.primary-btn{
+background: var(--btn-primary) !important;
+border: 1.5px solid var(--border-color) !important;
+padding: 10.7px 12px;
+display: flex;
+gap: 8px;
+align-items: center;
+justify-content: center;
+color: var(--white);
+  font-family: "Space Grotesk", serif;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 15px;
+}
+button.primary-btn:hover{
+  color: var(--white);
+}
+
+.gradient-btn{
+  background: var(--perple-gradient);
+  padding: 11px 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-family: "Space Grotesk", serif;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.mobile-toggle-menu{
+padding: 13px 13px !important;
+}
+@media screen and (min-width: 1200px) {
+  .mobile-toggle-menu{
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1199px){
+  .mobile-toggle-menu {
+      padding: 13px 13px !important;
+      display: flex !important;
+    }
+}
+.sidebar{
+  position: sticky;
+  top: 10px;
+  width: 100%;
+  max-width: 90px;
+  padding: 10px;
+  height: 93vh;
+  overflow-y: auto;
+  background: var(--header-bg);
+}
+
+.main-mid-container{
+  padding: 10px 10px 0px;
+  width: 100%;
+  max-width: 1498px;
+}
+.banner-container{
+  background: url('./assets/images/banner-1.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+padding: 30px 50px 40px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.banner-title{
+  font-size: 44px;
+  line-height: 48px;
+  color: var(--white);
+  margin: 0px  0px 14px;
+}
+.banner-container .para{
+  font-size: 16px;
+  color:var(--links-color);
+    font-family: "IBM Plex Sans", serif;
+  font-weight: 500;
+  margin: 0px 0px;
+}
+
+.banner-container-2{
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+   border-radius: 12px;
+  margin-top: 10px;
+  padding: 30px 90px 50px 30px;
+}
+.banner-container-2 .banner-title{
+font-size: 28px;
+line-height: 30px;
+margin: 0px 0px 8px;
+}
+
+.banner-container-2 .para{
+  font-size: 16px;
+  color:var(--links-color);
+    font-family: "IBM Plex Sans", serif;
+  font-weight: 500;
+margin: 0px 0px 48%;
+}
+
+.banner-container-2 .gradient-btn{
+  background: var(--neon-green) !important;
+  color: var(--green-txt);
+  font-size: 15px;
+  margin-left: 14px;
+}
+
+.footer{
+  background-color: #16161B;;
+  margin-top: 40px;
+
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+.footer ul{
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style-type: disc !important;
+}
+
+.footer ul li{
+    color:var(--svg) ;
+     list-style-type: disc !important;
+}
+.footer ul li a{
+text-decoration: none;
+color:var(--svg);
+font-size: 15px !important;
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 500;
+}
+
+.social-media .social-media-btn{
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #29292F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .logo-mb{
+    display: none;
+  }
+    .logo{
+      display: block;
+    }
+    .leftside-header .navigations{
+      display: flex;
+    }
+    .rightmenu .dropdown.currency{
+      display: flex;
+    }
+       .mb-battles{
+      display: none;
+    }
+      .desktop-battles{
+      display: block;
+    }
+    .desktop-banner{
+      display: block;
+    }
+    .mobile-banners{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1199px){
+    .logo-mb{
+    display: block;
+  }
+    .logo{
+      display: none;
+    }
+     .leftside-header .navigations{
+      display: none;
+     }
+         
+.rightmenu .dropdown.currency{
+      display: none;
+    }
+    .header {
+    padding: 10px 15px;
+  }
+  .rightmenu .lang{
+    padding: 10px 6px !important;
+  }
+  .sidebar {
+    display: none;
+  }
+  .chat-window{
+    display: none;
+  }
+  .feature{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .feature-left{
+    order: 1;
+  }
+    .feature-left .feature-title{
+      font-size: 18px !important;
+    }
+  .feature-tabs{
+    order: 3;
+  }
+    .feature .form-control{
+      max-width:200px ;
+    }
+    .featurebox-container .card{
+        max-width: 49% !important;
+    }
+    .feature-box-container .featurebox-container .card .btn-container button.btn-info{
+      max-width: 57px !important;
+    }
+    .feature-box-container .featurebox-container .card .btn-container button.gradient-btn{
+     padding: 11px 13px !important;
+    }
+    .mb-battles{
+      display: block;
+    }
+    .desktop-battles{
+      display: none;
+    }
+       .mb-battles img{
+        width: 57px;
+        height: 46px;
+       }
+       .mb-battles{
+            padding: 13px;
+       }
+       .mb-battles .gift-container{
+    gap: 20px !important;
+    border-radius: 8px;
+    margin-bottom: 9px;
+       }
+          .mb-battles  .left{
+            padding: 8px;
+            border-radius: 8px;
+            height: 43px;
+       }
+       .battel-container .left .imgs img{
+        width: 35px !important;
+        height: 35px !important;
+       }
+       .battel-container     .price-container{
+        margin-bottom: 0px !important;
+       }
+       .latest-battel-header.fresh-delivery{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start !important;
+       }
+       .fresh-delivery .para{
+        max-width: 100% !important;
+        text-align: left !important;
+       }
+       .testmonial-slides{
+        max-width: 100% !important;
+       }
+       .gallery img{
+        width: 120px !important;
+        height: 120px !important;
+       }
+       .footer .d-flex{
+        flex-wrap: wrap;
+       }
+       .footer .star-section{
+        order: 1;
+       }
+       .footer ul{
+        order: 3;
+        gap: 15px;
+        justify-content: space-between;
+        margin-top: 15px;
+       }
+       .social-media {
+        order: 2;
+       }
+       .desktop-banner{
+        display: none;
+       }
+          .mobile-banners{
+      display: block;
+    }
+    .banner-container {
+    background: url(/src/assets/images/mobile-banner-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+        padding: 15px;
+    border-radius: 12px;
+    margin-top: 10px;
+
+}
+.banner-title {
+        font-size: 24px;
+    }
+    .banner-container .para {
+    font-size: 14px;
+    width: 82%;
+}
+} 
